@@ -1,61 +1,126 @@
-# LeetLab — Competitive Coding Platform
+# 🧪 LeetLab — The Ultimate Code Practice Platform
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" alt="Prisma" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+</p>
 
-> A LeetCode-style competitive coding platform where users can browse problems, write solutions in the browser, run test cases, and track their progress — built full-stack from scratch.
+---
 
-## Features
+### 🚀 Level Up Your Coding Skills with LeetLab
 
-- 📝 **Problem library** — curated list of DSA problems with difficulty tags (Easy / Medium / Hard)
-- 💻 **In-browser code editor** — write, run and test solutions without leaving the page
-- ✅ **Auto-judge** — submit your solution and see pass/fail per test case instantly
-- 📊 **Progress tracking** — solved / attempted count per user
-- 🔐 **User accounts** — signup, signin, personal dashboard
-- 🏷️ **Tag filtering** — filter problems by topic (Arrays, Trees, DP, Graphs…)
+**LeetLab** is a high-performance, full-stack LeetCode clone designed for developers who want a seamless, fast, and intelligent coding environment. Built with a modern tech stack and featuring a **triple-layer execution engine**, LeetLab allows you to solve 50+ problems with real-time feedback and AI assistance.
 
-## Tech Stack
+[**Explore the Code**](https://github.com/JeetuPalhub/leetlab) • [**Setup Guide**](./deployment.md) • [**Report Bug**](https://github.com/JeetuPalhub/leetlab/issues)
 
-| Layer | Tech |
-|-------|------|
-| Frontend | React, Monaco Editor (VS Code engine) |
-| Backend | Node.js, Express |
-| Database | MongoDB + Mongoose |
-| Auth | JWT, bcrypt |
-| Code Execution | Sandboxed Node.js eval / Judge0 API |
+---
 
-## System Design
+## 📸 Visual Showcase
 
+### 🏠 Stunning Landing Page
+> Experience a sleek, modern entry point designed to inspire.
+![Landing Page](./screenshots/landing.png)
+
+### 📊 Premium Dashboard
+> Manage your progress and explore problems with ease.
+![Dashboard](./screenshots/dashboard.png)
+
+### 💻 Professional Editor Experience
+> Featuring Monaco Editor, resizable split panels, and instant execution results.
+![Editor](./screenshots/editor.png)
+
+### 📝 Comprehensive Problem List
+> Filter and find challenges tailored to your skill level.
+![Problems List](./screenshots/problems.png)
+
+---
+
+## 💎 Key Features
+
+- **⚡ Triple-Layer Execution Engine**:
+  - **Local JS Fallback**: Run JavaScript instantly with zero external dependencies.
+  - **Local Python Fallback**: Integrated local execution for Python (No API Key needed!).
+  - **RapidAPI / Judge0**: Cloud-powered support for 70+ languages.
+- **🤖 Smart AI Assistant**: Get hints, code reviews, and optimal solutions powered by **Groq AI (Llama 3.3 70B)**.
+- **🔐 Enterprise-Grade Auth**: Secure login/signup with JWT and Role-Based Access Control (RBAC).
+- **📝 Monaco Power**: The same editor that powers VS Code, right in your browser.
+- **📉 Live Metrics**: Track runtime, memory usage, and execution status for every submission.
+- **📱 Fluid Responsiveness**: A pixel-perfect experience from your 4K monitor to your mobile phone.
+- **💬 Community Threads**: Discuss solutions and learn with nested comment replies.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools |
+| :--- | :--- |
+| **Frontend** | React 18, Vite, Tailwind CSS, Zustand |
+| **Backend** | Node.js, Express, TypeScript, Zod |
+| **Database** | PostgreSQL, Prisma ORM |
+| **Execution** | Judge0, Local Node/Python Spawners |
+| **AI Layer** | Groq (Llama 3.3 70B) |
+
+---
+
+## 🚀 Quick Start
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/JeetuPalhub/leetlab.git
+cd leetlab
 ```
-User submits code
-      │
-  POST /submit
-      │
-  Judge Service
-  ├── Runs code against test cases
-  ├── Captures stdout / stderr
-  └── Returns verdict (AC / WA / TLE)
-      │
-  Save result to DB
-      │
-  Update user progress
-```
 
-## Local Setup
+### 2️⃣ Project Setup
+We recommend setting up both the backend and frontend:
 
 ```bash
-git clone https://github.com/jeetupal31/leetlab.git
-cd leetlab
-npm install
+# Setup Backend
+cd backend && npm install
 
-# Set env vars
-cp .env.example .env   # add MONGO_URI, JWT_SECRET
+# Setup Frontend
+cd ../frontend && npm install
+```
 
-npm run dev
+### 3️⃣ Configuration
+Create a `.env` file in the `backend` directory:
+
+```env
+DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DB
+JWT_SECRET=your-secret-key
+RAPIDAPI_KEY=your-key # (Optional) For C++/Java support
+```
+
+### 4️⃣ Run the Application
+```bash
+# Terminal 1: Backend
+cd backend && npm run dev
+
+# Terminal 2: Frontend
+cd frontend && npm run dev
+```
+Visit **[http://localhost:5173](http://localhost:5173)** to start coding! 🚀
+
+---
+
+## 📁 Project Structure
+
+```text
+leetlab/
+├── 🌐 backend/      # Express API & Prisma Schema
+├── 🎨 frontend/     # Vite + React UI
+├── 📜 deployment/   # Deployment guides
+└── 📸 screenshots/  # High-quality UI previews
 ```
 
 ---
 
-Made by [Jeetu Pal](https://github.com/jeetupal31)
+## 📄 License & Contributing
+
+Distributed under the **MIT License**. We love contributions! Feel free to fork and submit a PR.
+
+---
+<p align="center">Made with ❤️ for the Developer Community</p>
