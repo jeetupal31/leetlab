@@ -6,7 +6,7 @@ import {
     CheckCircle2, ChevronRight, ArrowUpRight, StickyNote,
     Filter, Tag
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 const BookmarkedProblems = () => {
     const { userBookmarks, getUserBookmarks, removeBookmark, isLoading } = useInteractionStore();

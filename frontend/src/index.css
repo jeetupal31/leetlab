@@ -61,4 +61,48 @@
       transform: scale(1.05);
     }
   }
-  
+
+/* ---------- App-wide UI polish ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Accessible keyboard focus ring (only on keyboard nav, not mouse clicks) */
+:focus-visible {
+  outline: 2px solid var(--color-primary, #6366f1);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Branded text selection */
+::selection {
+  background: color-mix(in srgb, var(--color-primary, #6366f1) 30%, transparent);
+}
+
+/* Refined, unobtrusive scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, currentColor 38%, transparent);
+  background-clip: content-box;
+}
+
+/* Snappier feedback on buttons/links without fighting daisyUI styles */
+.btn,
+a.btn {
+  transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+}
+.btn:active:not(:disabled) {
+  transform: translateY(1px) scale(0.98);
+}

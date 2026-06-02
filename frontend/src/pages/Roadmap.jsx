@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
 import {
     Sparkles, Target, ChevronRight,
     Layers, Zap, BrainCircuit, Rocket

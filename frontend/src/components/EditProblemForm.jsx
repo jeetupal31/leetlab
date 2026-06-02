@@ -19,7 +19,6 @@ import {
 } from "lucide-react";
 import Editor from "@monaco-editor/react";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import { useProblemStore } from "../store/useProblemStore";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";

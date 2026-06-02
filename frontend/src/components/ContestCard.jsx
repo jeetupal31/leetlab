@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Calendar, Users, Trophy, ChevronRight, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

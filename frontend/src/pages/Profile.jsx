@@ -13,7 +13,7 @@ import BookmarkedProblems from "../components/BookmarkedProblems";
 import ContributionGraph from "../components/ContributionGraph";
 import { axiosInstance } from "../libs/axios";
 import toast from "react-hot-toast";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 const Profile = () => {
   const { authUser, setAuthUser, profileData, getProfileData, isProfileLoading } = useAuthStore();

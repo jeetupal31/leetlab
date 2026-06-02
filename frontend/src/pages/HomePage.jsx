@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { motion } from "framer-motion";
 import { useProblemStore } from "../store/useProblemStore";
 import ProblemsTable from "../components/ProblemTable";
 import {

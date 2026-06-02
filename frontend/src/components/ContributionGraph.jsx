@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { useSubmissionStore } from '../store/useSubmissionStore';
 import { Calendar, TrendingUp, Flame, Award, ChevronRight, Info, Zap } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 const ContributionGraph = ({ userId }) => {
     const { submissions, getAllSubmissions } = useSubmissionStore();

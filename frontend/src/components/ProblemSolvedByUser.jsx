@@ -6,7 +6,7 @@ import {
   LayoutGrid, List as ListIcon, Search, Target, CheckCircle2,
   ChevronRight, ArrowUpRight
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 const ProblemSolvedByUser = ({ userId }) => {
   const { getSolvedProblemByUser, solvedProblems, isLoading } = useProblemStore();
