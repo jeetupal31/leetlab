@@ -19,7 +19,10 @@
 
 **LeetLab** is a high-performance, full-stack LeetCode clone designed for developers who want a seamless, fast, and intelligent coding environment. Built with a modern tech stack and featuring a **triple-layer execution engine**, LeetLab allows you to solve 50+ problems with real-time feedback and AI assistance.
 
-[**Explore the Code**](https://github.com/jeetupal31/leetlab) • [**Setup Guide**](./deployment.md) • [**Report Bug**](https://github.com/jeetupal31/leetlab/issues)
+[**🌐 Live Demo**](https://leetlab-nu.vercel.app) • [**Explore the Code**](https://github.com/jeetupal31/leetlab) • [**Setup Guide**](./deployment.md) • [**Report Bug**](https://github.com/jeetupal31/leetlab/issues)
+
+> **Live:** frontend on [leetlab-nu.vercel.app](https://leetlab-nu.vercel.app) · API on Render · PostgreSQL · Judge0 execution.
+> *(The API is on a free tier, so the first request after idle may take ~30s to wake.)*
 
 ---
 
