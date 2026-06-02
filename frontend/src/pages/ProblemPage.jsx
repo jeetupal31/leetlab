@@ -334,7 +334,7 @@ const ProblemPage = () => {
           </div>
         );
 
-      case "submissions":
+      case "submissions": {
         const handleLoadMoreSubmissions = () => {
           if (submissionPagination?.hasMore) {
             getSubmissionForProblem(id, submissionPagination.currentPage + 1, submissionPagination.limit, true);
@@ -348,6 +348,7 @@ const ProblemPage = () => {
             onLoadMore={handleLoadMoreSubmissions}
           />
         );
+      }
 
       case "discussion":
         return <Discussion problemId={id} />;
