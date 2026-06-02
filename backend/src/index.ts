@@ -29,9 +29,21 @@ import challengeRoutes from './routes/challenge.routes.js';
 const app: Application = express();
 
 // Middlewares
+// Reflect the request origin when it's allowed (required for credentialed
+// requests, which can't use a wildcard). Allows the production frontend, local
+// dev, and Vercel preview deployments — additive, so production is unaffected.
+const allowedOrigins = [env.FRONTEND_URL, 'http://localhost:5173', 'http://localhost:3000'];
 app.use(
     cors({
-        origin: env.FRONTEND_URL,
+        origin: (origin, callback) => {
+            if (!origin) return callback(null, true); // curl / same-origin / server-to-server
+            const isAllowed =
+                allowedOrigins.includes(origin) ||
+                origin.endsWith('.vercel.app') ||
+                origin.includes('localhost') ||
+                origin.includes('127.0.0.1');
+            return isAllowed ? callback(null, true) : callback(new Error('Not allowed by CORS'));
+        },
         credentials: true,
     })
 );
