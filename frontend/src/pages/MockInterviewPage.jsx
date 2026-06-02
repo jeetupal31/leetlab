@@ -18,7 +18,7 @@ import {
     Lightbulb
 } from "lucide-react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const MockInterviewPage = () => {
     const { id } = useParams();

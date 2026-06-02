@@ -6,7 +6,7 @@ import {
   ChevronDown, ChevronUp, Filter, Search, Calendar, Zap,
   ChevronRight, ArrowUpRight, Cpu
 } from 'lucide-react';
-import { AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const ProfileSubmission = ({ userId }) => {
   const { submissions, getAllSubmissions, isLoading, pagination } = useSubmissionStore();

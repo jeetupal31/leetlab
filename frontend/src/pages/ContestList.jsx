@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { Trophy, Info, Sparkles } from 'lucide-react';
 import { useContestStore } from '../store/useContestStore';
 import ContestCard from '../components/ContestCard';

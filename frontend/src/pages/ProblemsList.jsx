@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useProblemStore } from "../store/useProblemStore";
 import ProblemsTable from "../components/ProblemTable";
 import { Loader, Search, Filter, BookOpen, Layers } from "lucide-react";
+import { motion } from "framer-motion";
 import Skeleton from "../components/Skeleton";
 
 const ProblemsList = () => {

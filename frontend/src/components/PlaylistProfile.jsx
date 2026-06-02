@@ -6,7 +6,7 @@ import {
   ExternalLink, Trash2, Plus, Play, Sparkles, Folder,
   ChevronRight, MoreVertical, LayoutGrid, ListIcon
 } from 'lucide-react';
-import { AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const PlaylistProfile = () => {
   const { getAllPlaylists, playlists, deletePlaylist, isLoading } = usePlaylistStore();

@@ -15,7 +15,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import EmptyState from "./EmptyState";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { getMonacoLanguage } from "../libs/utils";
 
 const SubmissionsList = ({ submissions, isLoading, pagination, onLoadMore }) => {
