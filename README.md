@@ -1,6 +1,10 @@
 # 🧪 LeetLab — The Ultimate Code Practice Platform
 
 <p align="center">
+  <a href="https://github.com/jeetupal31/leetlab/actions/workflows/ci.yml"><img src="https://github.com/jeetupal31/leetlab/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
@@ -15,7 +19,7 @@
 
 **LeetLab** is a high-performance, full-stack LeetCode clone designed for developers who want a seamless, fast, and intelligent coding environment. Built with a modern tech stack and featuring a **triple-layer execution engine**, LeetLab allows you to solve 50+ problems with real-time feedback and AI assistance.
 
-[**Explore the Code**](https://github.com/JeetuPalhub/leetlab) • [**Setup Guide**](./deployment.md) • [**Report Bug**](https://github.com/JeetuPalhub/leetlab/issues)
+[**Explore the Code**](https://github.com/jeetupal31/leetlab) • [**Setup Guide**](./deployment.md) • [**Report Bug**](https://github.com/jeetupal31/leetlab/issues)
 
 ---
 
@@ -70,7 +74,7 @@
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/JeetuPalhub/leetlab.git
+git clone https://github.com/jeetupal31/leetlab.git
 cd leetlab
 ```
 
