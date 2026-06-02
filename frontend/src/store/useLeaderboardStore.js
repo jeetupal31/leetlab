@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { axiosInstance } from "../libs/axios.js";
 import toast from "react-hot-toast";
 
-export const useLeaderboardStore = create((set) => ({
+export const useLeaderboardStore = create((set, get) => ({
     leaderboard: [],
     pagination: {
         currentPage: 1,
