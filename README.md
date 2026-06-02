@@ -65,11 +65,13 @@
 
 | Category | Tools |
 | :--- | :--- |
-| **Frontend** | React 18, Vite, Tailwind CSS, Zustand |
+| **Frontend** | React 19, Vite, Tailwind CSS + daisyUI, Zustand, Monaco Editor |
 | **Backend** | Node.js, Express, TypeScript, Zod |
 | **Database** | PostgreSQL, Prisma ORM |
-| **Execution** | Judge0, Local Node/Python Spawners |
+| **Realtime** | Socket.IO (contests / live leaderboard) |
+| **Execution** | Judge0 (sandboxed) + Local Node/Python fallback |
 | **AI Layer** | Google Gemini (1.5 Flash) |
+| **DevOps** | GitHub Actions CI, Docker, Vercel + Render |
 
 ---
 
@@ -119,7 +121,7 @@ Visit **[http://localhost:5173](http://localhost:5173)** to start coding! 🚀
 leetlab/
 ├── 🌐 backend/      # Express API & Prisma Schema
 ├── 🎨 frontend/     # Vite + React UI
-├── 📜 deployment/   # Deployment guides
+├── 📜 deployment.md # Deployment guide (Render + Vercel)
 └── 📸 screenshots/  # High-quality UI previews
 ```
 
