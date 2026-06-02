@@ -52,7 +52,7 @@
   - **Local JS Fallback**: Run JavaScript instantly with zero external dependencies.
   - **Local Python Fallback**: Integrated local execution for Python (No API Key needed!).
   - **RapidAPI / Judge0**: Cloud-powered support for 70+ languages.
-- **🤖 Smart AI Assistant**: Get hints, code reviews, and optimal solutions powered by **Groq AI (Llama 3.3 70B)**.
+- **🤖 Smart AI Assistant**: Get hints, code reviews, and optimal solutions powered by **Google Gemini (1.5 Flash)**.
 - **🔐 Enterprise-Grade Auth**: Secure login/signup with JWT and Role-Based Access Control (RBAC).
 - **📝 Monaco Power**: The same editor that powers VS Code, right in your browser.
 - **📉 Live Metrics**: Track runtime, memory usage, and execution status for every submission.
@@ -69,7 +69,7 @@
 | **Backend** | Node.js, Express, TypeScript, Zod |
 | **Database** | PostgreSQL, Prisma ORM |
 | **Execution** | Judge0, Local Node/Python Spawners |
-| **AI Layer** | Groq (Llama 3.3 70B) |
+| **AI Layer** | Google Gemini (1.5 Flash) |
 
 ---
 
